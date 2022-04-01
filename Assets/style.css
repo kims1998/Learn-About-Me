@@ -1,0 +1,50 @@
+html {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+nav {
+    margin: 10px 10px 0 0;
+}
+
+ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      font-size: larger;
+  }
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+  }
+  
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url("file:///C:/Users/hocol/OneDrive/Desktop/CODING/Homework/AboutMe/Learn-About-Me/Assets/Img/MV-22.jpg");
+    background-position: 5px;
+    background-size: 100%;
+  }
+  header h1 {
+      color:#800020;
+  }
+  
+  span {
+    color: #17238a;
+  }
+
+  span h1 {
+      display: flex;
+      justify-content: flex-start;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
