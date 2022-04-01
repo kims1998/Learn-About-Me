@@ -2,18 +2,19 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-height: 100%;
   }
   
   body {
-    background-color: #d9dcd6;
+    background-color: #e4e4e4fa;
   }
   
   .header {
     padding: 20px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: #a10909;
+    color: #f0e32c;
   }
   
   .header h1 {
@@ -21,34 +22,22 @@
     font-size: 48px;
   }
   
-  .header h1 .seo {
-    color: #d9dcd6;
-  }
-  
   .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-      20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, 20px;
+    color: white;
   }
   
   .header nav ul {
     list-style-type: none;
+    font-size: larger;
+    filter: contrast(100%);
   }
   
   .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
-  }
-  
-  .float-left {
-    float: left;
-    margin-right: 25px;
-  }
-  
-  .float-right {
-    float: right;
     margin-left: 25px;
   }
   
@@ -61,21 +50,18 @@
     img {
         width: 200px;
         position: relative;
-        left: 100px;
+        left: 150px;
         border-radius: 40px;
         border-style: ridge;
     }
   
   .Synopsis {
-    margin-right: 20px;
     margin-bottom: 100%;
     padding: 20px;
-    clear: both;
     float: right;
     width: 60%;
-    height: 100%;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #681823;
+    background-color: #7c444c;
     position: relative;
     top: -600px;
   }
@@ -86,52 +72,69 @@
   }
   
   .About-Me,
-  .Work{
+  .Work {
     padding: 50px;
     height: 300px;
     width: 500px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #13212b;
-    color: #ffffff;
+    color: black;
+    position: relative;
+    left: 50px;
+    font-size: 18px;
   }
   
 .About-Me p{
     position: relative;
-    left: 55px;
+    left: 84px;
 }
+
+  .Work p {
+    position: relative;
+    left: 56px;
+  }
 
   .About-Me h2,
   .Work h2 {
       margin-bottom: 20px;
       font-size: 36px;
+      position: relative;
   }
 
   .About-Me h2{
-    position: relative;
-    left: 120px
+    left: 173px;
   }
 
   .Work h2{
     margin-top: 40px;
-    position: relative;
-    left: 152px;
+    left: 205px;
   }
   
-  .footer {
+  footer {
     padding: 30px;
-    clear: both;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     text-align: center;
-  }
+    position: relative;
+    top: 620px;
+    background-color: #130707;
+   }
 
-  .footer p {
-    display: flex;
-    flex-direction: row;
-  }
-  
+.footer h2,
+P.Contacts {
+position: relative;
+left: 550px;
+}
+
   .footer h2 {
-    font-size: 20px;
+    font-size: 40px;
+    color: bisque;
+    top: -18px
+  }
 
+  P.Contacts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #7c444c;
   }
   
