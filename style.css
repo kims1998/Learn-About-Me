@@ -7,20 +7,21 @@
 /*THIS IS FOR THE WHOLE BODY*/
   body {
     background-color: #e4e4e4fa;
-    max-height:100%;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-gap: 1em;
   }
   
 /*THIS IS THE HEADER PORTION*/
   header {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     padding: 20px;
     background-color: #130707;
   }
   
         header h1 {
-          display: inline-block;
           font-size: 48px;
           color: white;
         }
@@ -38,7 +39,6 @@
         }
   
   header nav ul li {
-    display: inline-block;
     margin-left: 25px;
   }
 
@@ -47,15 +47,18 @@
     color: blue;
   }
 
+.content {
+  display:grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 2fr 5fr;
+}
+
+
   /*THIS IS THE RIGHT SIDE PORTION*/
   .Right{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    float: right;
+    display:grid;
+    grid-area: 1 / 2;
     width: 1475px;
-    position: relative;
-    top: 60px;
     border-left: 1px;
     border-color: black;
     border-left-style: solid;
@@ -69,8 +72,7 @@
 
   /*THIS IS THE PICTURE AND THE "ABOUT ME" */
   .About-Me {
-    display:flex;
-    justify-content: flex-end;
+    display:grid;
     padding: 50px;
     color: black;
     font-size: 24px;
@@ -80,18 +82,61 @@
       font-size: 36px;
   }
 
-  img {
+  .Me {
     width: 250px;
+    height: 250px;
     border-radius: 50px;
     border-style: ridge;
     box-shadow: 10px 5px 5px rgb(0, 0, 0);
-    position: absolute;
-    left: 30px;
-    bottom: 519px;
+  }
+
+  /*THIS IS THE WORK PORTION*/
+  .Photos {
+    display: flex;
+    flex-flow: row wrap;
+  
+  }
+
+  .Top img {
+    width:660px;
+    height: 250px;
+  }
+
+  .Bot-Left img,
+  .Bot-Mid img {
+    width: 220px;
+    height:250px;
+  }
+
+  .Bot-Left img{
+
+  }
+
+  .Bot-Right img {
+    width: 220px;
+    height: 250px;
   }
   
+.work {
+  display: grid;
+  grid-area: 2 / 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*THIS IS THE WHOLE FOOTER PORTION */
   footer {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
     padding: 30px;
     text-align: center;
     position: relative;
@@ -129,3 +174,5 @@
   
   @media screen and (max-width: 566px) {
   }
+
+  
