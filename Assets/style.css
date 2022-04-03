@@ -1,140 +1,131 @@
+/*THIS IS FOR THE WHOLE PAGE*/
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    max-height: 100%;
+    font-family: 'Times New Roman', Times, serif;
   }
   
+/*THIS IS FOR THE WHOLE BODY*/
   body {
     background-color: #e4e4e4fa;
+    max-height:100%;
   }
   
-  .header {
+/*THIS IS THE HEADER PORTION*/
+  header {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding: 20px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    background-color: #a10909;
-    color: #f0e32c;
+    background-color: #130707;
   }
   
-  .header h1 {
-    display: inline-block;
-    font-size: 48px;
-  }
+        header h1 {
+          display: inline-block;
+          font-size: 48px;
+          color: white;
+        }
   
-  .header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, 20px;
-    color: white;
-  }
+              header nav {
+              padding-top: 15px;
+              margin-right: 20px;
+              float: right;
+              color: white;
+              }
   
-  .header nav ul {
-    list-style-type: none;
-    font-size: larger;
-    filter: contrast(100%);
-  }
+        header nav ul {
+        list-style-type: none;
+        font-size: larger;
+        }
   
-  .header nav ul li {
+  header nav ul li {
     display: inline-block;
     margin-left: 25px;
   }
-  
-  .content {
-    width: 80%;
-    display: inline-block;
-    margin-left: 20px;
+
+  /*THIS IS THE LAST NAME COLOR*/
+  .Last {
+    color: blue;
   }
 
-    img {
-        width: 200px;
-        position: relative;
-        left: 150px;
-        border-radius: 40px;
-        border-style: ridge;
-    }
-  
-  .Synopsis {
-    margin-bottom: 100%;
+  /*THIS IS THE RIGHT SIDE PORTION*/
+  .Right{
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     float: right;
-    width: 60%;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #7c444c;
+    width: 1475px;
     position: relative;
-    top: -600px;
+    top: 60px;
+    border-left: 1px;
+    border-color: black;
+    border-left-style: solid;
   }
-  
-  .Synopsis h3 {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .About-Me,
-  .Work {
+        .Right h3{
+          border-left: 3px;
+          border-color: black;
+          border-left-style: solid;
+        }
+    
+
+  /*THIS IS THE PICTURE AND THE "ABOUT ME" */
+  .About-Me {
+    display:flex;
+    justify-content: flex-end;
     padding: 50px;
-    height: 300px;
-    width: 500px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     color: black;
-    position: relative;
-    left: 50px;
-    font-size: 18px;
-  }
-  
-.About-Me p{
-    position: relative;
-    left: 84px;
-}
-
-  .Work p {
-    position: relative;
-    left: 56px;
+    font-size: 24px;
   }
 
-  .About-Me h2,
-  .Work h2 {
-      margin-bottom: 20px;
+  .About-Me h2 {
       font-size: 36px;
-      position: relative;
   }
 
-  .About-Me h2{
-    left: 173px;
-  }
-
-  .Work h2{
-    margin-top: 40px;
-    left: 205px;
+  img {
+    width: 250px;
+    border-radius: 50px;
+    border-style: ridge;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    position: absolute;
+    left: 30px;
+    bottom: 519px;
   }
   
+/*THIS IS THE WHOLE FOOTER PORTION */
   footer {
     padding: 30px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
     text-align: center;
     position: relative;
-    top: 620px;
+    top: 350px;
     background-color: #130707;
    }
 
-.footer h2,
-P.Contacts {
-position: relative;
-left: 550px;
-}
+        .footer h2,
+        P.Contacts {
+            position: relative;
+        }
 
   .footer h2 {
     font-size: 40px;
     color: bisque;
-    top: -18px
+    top: -18px;
+    left: 30px;
   }
 
   P.Contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 20px;
-    color: #7c444c;
+    color: bisque;
+    left: -10px;
   }
   
+  /*THIS IS FOR ADJUSTING SCREEN SIZE*/
+  @media screen and (max-width: 992px) {
+
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 566px) {
+  }
